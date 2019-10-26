@@ -56,7 +56,19 @@ body {
 .masthead-brand {
   margin-bottom: 0;
 }
-
+.masthead-brand :hover{
+  opacity : 0.75;
+}
+.text-color{
+  color: white;
+}
+.text-color :hover{
+  color: yellowgreen;
+}
+.email-color :hover{
+  color : black;
+ 
+}
 .nav-masthead .nav-link {
   padding: .25rem 0;
   font-weight: 700;
