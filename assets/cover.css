@@ -28,7 +28,7 @@ html,
 body {
   height: 100%;
   background-color: #333;
-  background-image: url(/assets/back.jpg);
+  background-image: url(/assets/images/back.jpg);
   background-repeat: no-repeat;
   background-size:cover;
 }
@@ -120,3 +120,13 @@ body {
   color: rgba(255, 255, 255, .5);
 }
 
+.text-transform :hover{
+  color: white;
+  font-size: 38px;
+  transform: rotate(180degs);
+  transition: width .5s, height .5s, transform .5s;
+}
+
+.bottom-border {
+  border-bottom: none !important;
+}
