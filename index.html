@@ -40,20 +40,24 @@
       <div class="inner">
         <h3 class="masthead-brand animated slideInLeft"><a class="nav-link " href="/assets/about.html">About Me</a></h3>
         <nav class="nav nav-masthead justify-content-center animated slideInRight">
-          <a class="nav-link pr-3 text-transform bottom-border" href="#" data-toggle="tooltip" title="Resume"
+          <a class="nav-link pr-3 text-transform bottom-border" href="" data-toggle="tooltip" title="Resume"
             onclick="window.open('https://drive.google.com/open?id=1S7Tlry8k0RZ2mkpx1bGAHlhCdGmZs2M1')"
             style="font-size: 32px;"><i class="fas fa-file"></i></a>
-          <a class="nav-link pr-3 text-transform bottom-border" href="https://github.com/suman-kr" data-toggle="tooltip"
-            title="Github" style="font-size: 32px;"><i class="fab fa-github"></i></a>
-          <a class="nav-link pr-3 text-transform bottom-border" href="https://twitter.com/sumankr123"
-            data-toggle="tooltip" title="Twitter" style="font-size: 32px;"><i class="fab fa-twitter"></i></a>
-          <a class="nav-link pr-3 text-transform bottom-border"
-            href="https://stackoverflow.com/users/9422215/suman-kumar" data-toggle="tooltip" title="Stack Overflow"
-            style="font-size: 32px;"><i class="fab fa-stack-overflow"></i></a>
-          <a class="nav-link pr-3 text-transform bottom-border" href="https://www.quora.com/profile/Suman-Kumar-216"
-            data-toggle="tooltip" title="Quora" style="font-size: 32px;"><i class="fab fa-quora"></i></a>
+          <a class="nav-link pr-3 text-transform bottom-border" href="" data-toggle="tooltip" title="Github"
+            onclick="window.open('https://github.com/suman-kr')" style="font-size: 32px;"><i
+              class="fab fa-github"></i></a>
+          <a class="nav-link pr-3 text-transform bottom-border" href="" data-toggle="tooltip" title="Twitter"
+            onclick="window.open('https://twitter.com/sumankr123')" style="font-size: 32px;"><i
+              class="fab fa-twitter"></i></a>
+          <a class="nav-link pr-3 text-transform bottom-border" href="" data-toggle="tooltip" title="Stack Overflow"
+            onclick="window.open('https://stackoverflow.com/users/9422215/suman-kumar')" style="font-size: 32px;"><i
+              class="fab fa-stack-overflow"></i></a>
+          <a class="nav-link pr-3 text-transform bottom-border" href="" data-toggle="tooltip" title="Quora"
+            onclick="window.open('https://www.quora.com/profile/Suman-Kumar-216')" style="font-size: 32px;"><i
+              class="fab fa-quora"></i></a>
           <a class="nav-link pr-3 text-transform bottom-border" href="https://www.chess.com/member/sumankr1"
-            data-toggle="tooltip" title="Chess.com" style="font-size: 32px;"><i class="fas fa-chess-pawn"></i></a>
+            data-toggle="tooltip" title="Chess.com" onclick="window.open('https://www.chess.com/member/sumankr1')"
+            style="font-size: 32px;"><i class="fas fa-chess-pawn"></i></a>
 
         </nav>
       </div>
@@ -62,8 +66,8 @@
     <main role="main" class="inner cover ">
       <div class="text-color animated slideInUp">
 
-        <a href="#" class="h1 text-decoration-none popover-image" data-toggle="popover" data-placement="top"
-          style="cursor: text;">Hi, I'm Suman Kumar</a>
+        <a href="#" class="h1 text-decoration-none popover-image" data-toggle="popover" data-container="body"
+          data-placement="top" style="cursor: text;">Hi, I'm Suman Kumar</a>
         <p class="lead">A passionate programmer.</p>
 
       </div>
@@ -99,7 +103,7 @@ document.write(new Date().getFullYear());
   <script>
 
     $('[data-toggle="popover"]').popover({
-      container: '.popover-image',
+
       html: true,
       trigger: 'focus',
       content: function () {
@@ -111,9 +115,6 @@ document.write(new Date().getFullYear());
         return a
       }
     });
-
-
-
   </script>
 </body>
 
