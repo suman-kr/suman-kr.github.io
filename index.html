@@ -38,7 +38,7 @@
   <div class=" d-flex w-100 h-100 p-3 mx-auto flex-column">
     <header class="masthead mb-auto">
       <div class="inner">
-        <h3 class="masthead-brand"><a class="nav-link " href="/assets/about.html">About Me</a></h3>
+        <h3 class="masthead-brand animated slideInLeft"><a class="nav-link " href="/assets/about.html">About Me</a></h3>
         <nav class="nav nav-masthead justify-content-center animated slideInRight">
           <a class="nav-link pr-3 text-transform bottom-border" href="#" data-toggle="tooltip" title="Resume"
             onclick="window.open('https://drive.google.com/open?id=1S7Tlry8k0RZ2mkpx1bGAHlhCdGmZs2M1')"
@@ -61,7 +61,9 @@
 
     <main role="main" class="inner cover ">
       <div class="text-color animated slideInUp">
-        <h1>Hi, I'm Suman Kumar</h1>
+
+        <a href="#" class="h1 text-decoration-none popover-image" data-toggle="popover" data-placement="top"
+          style="cursor: text;">Hi, I'm Suman Kumar</a>
         <p class="lead">A passionate programmer.</p>
 
       </div>
@@ -94,7 +96,25 @@ document.write(new Date().getFullYear());
     integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
     crossorigin="anonymous"></script>
   <script src="/assets/js/all.min.js"></script>
+  <script>
 
+    $('[data-toggle="popover"]').popover({
+      container: '.popover-image',
+      html: true,
+      trigger: 'focus',
+      content: function () {
+        var a = '<img src="/assets/images/my-pic.jpeg" class="img-fluid image-size rounded-circle" alt="Suman Kumar">'
+        $(document).ready(function () {
+          $('.popover').css('background', 'transparent')
+          $('.arrow').css('display', 'none')
+        })
+        return a
+      }
+    });
+
+
+
+  </script>
 </body>
 
 </html>
