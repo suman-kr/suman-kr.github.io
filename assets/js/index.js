@@ -1,5 +1,5 @@
 const quote = new Promise((res, err) => {
-  let quote = fetch("http://py-quoters.herokuapp.com");
+  let quote = fetch("https://py-quoters.herokuapp.com");
   res(quote.then((e) => e.json()));
   err("URL down");
 });
