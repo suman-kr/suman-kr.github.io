@@ -1,6 +1,15 @@
 import styled from "styled-components";
 
 export const DescriptionContainer = styled.div`
+display: flex !important;
+justify-content: center !important;
+align-items: flex-start !important;
+height: calc(100vh - 7em) !important;
+width: 100% !important;
+flex-direction: column !important;
+`;
+
+export const Introduction = styled.div`
 color: white;
 font-weight: 600;
 font-size: 1.8em ;

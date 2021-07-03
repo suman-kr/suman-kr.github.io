@@ -1,6 +1,12 @@
 import React, { useEffect, useRef, useState } from "react";
 import { Col, Row } from "react-bootstrap";
-import { DescriptionContainer, Name, Interests, PrimaryButton } from "./styled";
+import {
+  DescriptionContainer,
+  Name,
+  Interests,
+  PrimaryButton,
+  Introduction,
+} from "./styled";
 import Typewriter from "typewriter-effect";
 
 const typeWritter = () => {
@@ -71,29 +77,25 @@ const displayElements = [
 export const Description = () => {
   useEffect(() => {}, []);
   return (
-    <div style={{ paddingTop: "6em" }}>
+    <div>
       <Row style={{ margin: 0 }}>
         <Col md={6}></Col>
         <Col md={6}>
-          <DescriptionContainer>Hello I am</DescriptionContainer>
-        </Col>
-        <Col md={6}></Col>
-        <Col md={6}>
-          <Name>Suman Kumar</Name>
-          <Interests id="typewriter">
-            <Typewriter
-              options={{
-                autoStart: true,
-                loop: true,
-                strings: displayElements,
-                cursor: "_",
-              }}
-            />
-          </Interests>
-        </Col>
-        <Col md={6}></Col>
-        <Col md={6}>
-          <PrimaryButton>Hire Me</PrimaryButton>
+          <DescriptionContainer>
+            <Introduction>Hello I am</Introduction>
+            <Name>Suman Kumar</Name>
+            <Interests id="typewriter">
+              <Typewriter
+                options={{
+                  autoStart: true,
+                  loop: true,
+                  strings: displayElements,
+                  cursor: "_",
+                }}
+              />
+            </Interests>
+            <PrimaryButton>Hire Me</PrimaryButton>
+          </DescriptionContainer>
         </Col>
       </Row>
     </div>

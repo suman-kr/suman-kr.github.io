@@ -13,7 +13,7 @@ const icons = [
   { icon: faGithub, url: "https://github.com/suman-kr" },
   { icon: faTwitter, url: "https://twitter.com/sumankr123" },
   { icon: faStackOverflow, url: "https://stackoverflow.com/" },
-  { icon: faLinkedin, url: "linkedin.com/in/suman-kr/" },
+  { icon: faLinkedin, url: "https://linkedin.com/in/suman-kr/" },
   { icon: faChessKnight, url: "https://lichess.org/@/sumankr" },
 ];
 
